@@ -16,15 +16,20 @@
   <body class="page">
     <header>
       <div class="page-wrapper">
-        <nav>
+        <nav class="main-nav">
           <!-- Список верхний состоит из фавиконки строки поиска и кнопки меню -->
           <img src="img/logo.svg" alt="Логотип магазина" class="logo">
-          <form action="https://echo.htmlacademy.ru" method="post" class="serchform">
+          <ul class="main-nav__menu">
+            <li class="main-nav__menu-item">Мебель</li>
+            <li class="main-nav__menu-item">Освещение</li>
+            <li class="main-nav__menu-item">Текстиль</li>
+          </ul>
+          <form action="https://echo.htmlacademy.ru" method="post" class="main-nav__serchform">
             <input type="serch" name="serch-field" id="serch-field">
-            <input type="submit" value="serch">
+            <button type="submit"><img src="img/Vector.svg" alt="Лупа" srcset=""></button>
           </form>
-          <img src="img/EmptyBasket.svg" alt="Корзина">
-          <button><img src="img/ClosedMenu.svg" alt=""></button>
+          <img class="main-nav__basket" src="img/EmptyBasket.svg" width=33 height=28 alt="Корзина">
+          <button class="main-nav__menu-button"><img src="img/ClosedMenu.svg" alt=""></button>
         </nav>
       </div>
     </header>
