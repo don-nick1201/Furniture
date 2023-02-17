@@ -1,24 +1,116 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Дезайнерская мебель</title>
-    <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/style.css">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Дезайнерская мебель</title>
+  <link rel="icon" href="favicon.ico"><!-- 32×32 -->
+  <link rel="icon" href="img/ico/FavIcon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,600;0,700;1,400&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/style.css">
 </head>
-<body>
+  <body class="page">
     <header>
-      <div>
-        
+      <div class="page-wrapper">
+        <nav>
+          <!-- Список верхний состоит из фавиконки строки поиска и кнопки меню -->
+          <img src="img/logo.svg" alt="Логотип магазина" class="logo">
+          <form action="https://echo.htmlacademy.ru" method="post" class="serchform">
+            <input type="serch" name="serch-field" id="serch-field">
+            <input type="submit" value="serch">
+          </form>
+          <img src="img/EmptyBasket.svg" alt="Корзина">
+          <button><img src="img/ClosedMenu.svg" alt=""></button>
+        </nav>
       </div>
-      <nav>
-        <!-- Список верхний состоит из фавиконки строки поиска и кнопки меню -->
-        <ul> 
-
-        </ul>
-      </nav>
     </header>
-</body>
+    <main class="page-main">
+      <div class="page-wrapper">
+        <h1 class="">Дизайнерская мебель</h1>
+        <section class="prima-fitch">
+          <div class="prima-fitch__image"></div>
+          <div class="prima-fitch__caption">Кресло "Антиква"</div>
+          <div class="prima-fitch__cost">$380</div>
+          <div class="prima-fitch__best-cost">$240</div>
+        </section>
+        <section class="new-products">
+          <h2>Новинки</h2>
+          <ul class="new-products__list">
+            <li class="new-products__element">
+              <div class="product__image"></div>
+              <div class="product__caption">Стул "Смеркается"</div>
+              <div class="product__cost">$280</div>
+            </li>
+            <li class="new-products__element">
+              <div class="product__image"></div>
+              <div class="product__caption">Стол "Крем брюле"</div>
+              <div class="product__cost">$320</div>
+            </li>
+            <li class="new-products__element">
+              <div class="product__image"></div>
+              <div class="product__caption">Люстра "Облако"</div>
+              <div class="product__cost">$250</div>
+            </li>
+            <li class="new-products__element">
+              <div class="product__image"></div>
+              <div class="product__caption">Стол "Крем брюле"</div>
+              <div class="product__cost">$120</div>
+            </li>
+          </ul>
+        </section>
+        <section class="old-products">
+          <h2>Последний шанс</h2>
+          <ul>
+            <li>Стулья           
+            </li>
+            <li>Диваны</li>
+            <li>Кресла</li>
+          </ul>
+          <ul class="old-products__list">
+            <li class="new-products__element">
+              <div class="product__image"></div>
+              <div class="product__caption">Стул "Карамель"</div>
+              <div class="product__cost">$120</div>
+            </li>
+            <li class="new-products__element">
+              <div class="product__image"></div>
+              <div class="product__caption">Стул "Крем брюле"</div>
+              <div class="product__cost">$120</div>
+            </li>
+            <li class="new-products__element">
+              <div class="product__image"></div>
+              <div class="product__caption">Стул "Крем брюле"</div>
+              <div class="product__cost">$120</div>
+            </li>
+            <li class="new-products__element">
+              <div class="product__image"></div>
+              <div class="product__caption">Стул "Крем брюле"</div>
+              <div class="product__cost">$120</div>
+            </li>
+            <li class="new-products__element">
+              <div class="product__image"></div>
+              <div class="product__caption">Стул "Крем брюле"</div>
+              <div class="product__cost">$120</div>
+            </li>
+          </ul>
+        </section>
+      </div>
+    </main>
+    <footer>
+      <img src="img/logo.svg" alt="Логотип" class="logo">
+      <p><img src="img/icons-phone.png" alt="Телефон">+7(495) 205-28-14</p>
+      <a href="mailto:callium@gmail.com"><img src="img/icons-new-post.png" alt="Письмо">callium@gmail.com</a>
+      <ul>
+        <li><a href="blank.html">Доставка</a></li>
+        <li><a href="blank.html">Оплата</a></li>
+        <li><a href="blank.html">Контакты</a></li>
+        <li><a href="blank.html">Гарантии</a></li>
+      </ul>
+      <p>© 2018 «Callium» — Сайт по продаже дизайнерской мебели. Все права защищены.</p>
+    </footer>
+  </body>
 </html>
