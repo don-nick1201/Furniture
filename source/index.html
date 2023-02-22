@@ -37,30 +37,66 @@
       <div class="page-wrapper">
         <h1 class="">Дизайнерская мебель</h1>
         <section class="prima-fitch">
-          <div class="prima-fitch__image"></div>
-          <div class="prima-fitch__caption">Кресло "Антиква"</div>
-          <div class="prima-fitch__cost">$380</div>
-          <div class="prima-fitch__best-cost">$240</div>
+          <div class="prima-fitch__list">
+            <div class="prima-fitch__item">
+              <div class="prima-fitch__image"></div>
+              <div class="prima-fitch__caption">Кресло "Антиква"</div>
+              <div class="prima-fitch__cost">$380</div>
+              <div class="prima-fitch__best-cost">$240</div>
+              <a href="#" class="prima-fitch__button">Купить</a>
+            </div>
+            <div class="prima-fitch__item visually-hidden">
+              <div class="prima-fitch__image"></div>
+              <div class="prima-fitch__caption">Кресло "Антиква"</div>
+              <div class="prima-fitch__cost">$380</div>
+              <div class="prima-fitch__best-cost">$240</div>
+              <a href="#" class="prima-fitch__button">Купить</a>
+            </div>
+          </div>
+          <ul class="prima-fitch__pagination pagination">
+            <li class="pagination__item--active">01</li>
+            <li class="pagination__item">02</li>
+            <li class="pagination__item">03</li>
+            <li class="pagination__item">04</li>
+          </ul>
+        </section>
+        <section class="reviews">
+          <h2 class="reviews__header visually-hidden">Отзывы</h2>
+          <div class="reviews__navigation">
+            <img src="img/arrow-left.svg" alt="Предидущий отзыв">
+            <img src="img/arrow-right.svg" alt="Следующий отзыв">
+          </div>
+          <ul class="reviews__list">
+            <li class="reviews__item review">
+              <div class="review__owner reviewer">
+                <img src="" alt="" class="reviewer__avatar">
+                <h3 class="reviewer__name">Елена Новикова</h3>
+                <p class="reviewer__activity">студентка</p>
+              </div>
+              <p class="review__text">«Хочу поделиться своими впечатлениями по использованию дивана «Бродвей», 
+заказывала в конце 2016 года. Держится великолепно. Спасибо, большое сотрудникам этого чудесного магазина.»</p>
+            </li>
+          </ul>
         </section>
         <section class="new-products">
-          <h2>Новинки</h2>
+          <h2 class="new-product__header">Новинки</h2>
           <ul class="new-products__list">
-            <li class="new-products__element">
+            <li class="new-products__element product">
               <div class="product__image"></div>
               <div class="product__caption">Стул "Смеркается"</div>
               <div class="product__cost">$280</div>
             </li>
-            <li class="new-products__element">
+            <li class="new-products__element product">
               <div class="product__image"></div>
               <div class="product__caption">Стол "Крем брюле"</div>
               <div class="product__cost">$320</div>
             </li>
-            <li class="new-products__element">
+            <li class="new-products__element product">
               <div class="product__image"></div>
               <div class="product__caption">Люстра "Облако"</div>
               <div class="product__cost">$250</div>
             </li>
-            <li class="new-products__element">
+            <li class="new-products__element product">
               <div class="product__image"></div>
               <div class="product__caption">Стол "Крем брюле"</div>
               <div class="product__cost">$120</div>
@@ -68,10 +104,9 @@
           </ul>
         </section>
         <section class="old-products">
-          <h2>Последний шанс</h2>
+          <h2 class="old-products__header">Последний шанс</h2>
           <ul>
-            <li>Стулья           
-            </li>
+            <li>Стулья</li>
             <li>Диваны</li>
             <li>Кресла</li>
           </ul>
