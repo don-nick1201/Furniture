@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Дезайнерская мебель</title>
+  <title>Дизайнерская мебель</title>
   <link rel="icon" href="favicon.ico"><!-- 32×32 -->
   <link rel="icon" href="img/ico/FavIcon.svg" type="image/svg+xml">
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -18,7 +18,7 @@
       <div class="page-wrapper">
         <nav class="main-nav">
           <!-- Список верхний состоит из фавиконки строки поиска и кнопки меню -->
-          <img src="img/logo.svg" alt="Логотип магазина" class="logo">
+          <img src="img/logo.svg" alt="Логотип магазина" class="main-nav__logo">
           <ul class="main-nav__menu">
             <li class="main-nav__menu-item">Мебель</li>
             <li class="main-nav__menu-item">Освещение</li>
@@ -35,73 +35,77 @@
     </header>
     <main class="page-main">
       <div class="page-wrapper">
-        <h1 class="">Дизайнерская мебель</h1>
+        <h1 class="page-main__main-header">Дизайнерская<br>мебель</h1>
         <section class="prima-fitch">
           <div class="prima-fitch__list">
             <div class="prima-fitch__item">
-              <div class="prima-fitch__image"></div>
+              <img class="prima-fitch__image" src="img/armchair_antikva.png"></img>
               <div class="prima-fitch__caption">Кресло "Антиква"</div>
-              <div class="prima-fitch__cost">$380</div>
-              <div class="prima-fitch__best-cost">$240</div>
+              <div class="prima-fitch__cost">
+                <div class="prima-fitch__cost--ordinary">$380</div>
+                <div class="prima-fitch__cost--best">$240</div>
+              </div>
               <a href="#" class="prima-fitch__button">Купить</a>
             </div>
             <div class="prima-fitch__item visually-hidden">
               <div class="prima-fitch__image"></div>
-              <div class="prima-fitch__caption">Кресло "Антиква"</div>
-              <div class="prima-fitch__cost">$380</div>
-              <div class="prima-fitch__best-cost">$240</div>
+              <div class="prima-fitch__caption">Кресло "Зантиква"</div>
+              <div class="prima-fitch__cost">
+                <div class="prima-fitch__cost--ordinary">$380</div>
+                <div class="prima-fitch__cost--best">$240</div>
+              </div>
               <a href="#" class="prima-fitch__button">Купить</a>
             </div>
           </div>
           <ul class="prima-fitch__pagination pagination">
-            <li class="pagination__item--active">01</li>
-            <li class="pagination__item">02</li>
-            <li class="pagination__item">03</li>
-            <li class="pagination__item">04</li>
-          </ul>
-        </section>
-        <section class="reviews">
-          <h2 class="reviews__header visually-hidden">Отзывы</h2>
-          <div class="reviews__navigation">
-            <img src="img/arrow-left.svg" alt="Предидущий отзыв">
-            <img src="img/arrow-right.svg" alt="Следующий отзыв">
-          </div>
-          <ul class="reviews__list">
-            <li class="reviews__item review">
-              <div class="review__owner reviewer">
-                <img src="" alt="" class="reviewer__avatar">
-                <h3 class="reviewer__name">Елена Новикова</h3>
-                <p class="reviewer__activity">студентка</p>
-              </div>
-              <p class="review__text">«Хочу поделиться своими впечатлениями по использованию дивана «Бродвей», 
-заказывала в конце 2016 года. Держится великолепно. Спасибо, большое сотрудникам этого чудесного магазина.»</p>
-            </li>
+            <li class="pagination__item pagination__item--active"><a>01</a></li>
+            <li class="pagination__item"><a>02</a></li>
+            <li class="pagination__item"><a>03</a></li>
+            <li class="pagination__item"><a>04</a></li>
           </ul>
         </section>
         <section class="new-products">
-          <h2 class="new-product__header">Новинки</h2>
           <ul class="new-products__list">
+            <li class="new-products__header"><h2>Новинки</h2></li>
             <li class="new-products__element product">
-              <div class="product__image"></div>
-              <div class="product__caption">Стул "Смеркается"</div>
+              <img class="product__image" src="img/chear_dark.jpg" alt="Стул 'Смеркается'"></img>
+              <div class="product__caption">Стул &laquo;Смеркается&raquo; </div>
               <div class="product__cost">$280</div>
             </li>
             <li class="new-products__element product">
-              <div class="product__image"></div>
-              <div class="product__caption">Стол "Крем брюле"</div>
-              <div class="product__cost">$320</div>
-            </li>
-            <li class="new-products__element product">
-              <div class="product__image"></div>
-              <div class="product__caption">Люстра "Облако"</div>
+              <img class="product__image" src="img/chandelier_cloud.jpg" alt="Люстра 'Облако'"></img>
+              <div class="product__caption">Люстра &laquo;Облако&raquo; </div>
               <div class="product__cost">$250</div>
             </li>
-            <li class="new-products__element product">
-              <div class="product__image"></div>
-              <div class="product__caption">Стол "Крем брюле"</div>
+            <li class="new-products__element product product--highlight">
+              <img class="product__image" src="img/desk_ice-cream.svg" alt="Стол 'Крем брюле'"></img>
+              <div class="product__caption">Стол &laquo;Крем брюле&raquo; </div>
+              <div class="product__cost">$320</div>
+            </li>
+            <li class="new-products__element product product--main">
+              <img class="product__image" src="img/chear_chocolate.jpg" alt="Стул офисный 'Белый шоколад'"></img>
+              <div class="product__caption">Стул &laquo;Белый шоколад&raquo; </div>
               <div class="product__cost">$120</div>
             </li>
           </ul>
+        </section>
+        <section class="reviews-sec">
+          <h2 class="reviews-sec__header visually-hidden">Отзывы</h2>
+          <div class="reviews">
+            <a href="" class="reviews__left-narrow"><img src="img/arrow-left.svg" alt="Предидущий"></a>
+            <a href="" class="reviews__right-narrow"><img src="img/arrow-right.svg" alt="Следующий"></a>
+            <ul class="reviews__list">
+              <li class="reviews__item review">
+                <div class="review__owner reviewer">
+                  <img class="reviewer__avatar" src="img/avatar.jpg" alt="Елена Новикова" class="reviewer__avatar">
+                  <h3 class="reviewer__name">Елена Новикова</h3>
+                  <p class="reviewer__activity">студентка</p>
+                </div>
+                <p class="review__text">«Хочу поделиться своими впечатлениями по использованию дивана «Бродвей», 
+            заказывала в конце 2016 года. Держится великолепно. Спасибо, большое сотрудникам этого чудесного магазина.»</p>
+              </li>
+            </ul>
+          </div>
         </section>
         <section class="old-products">
           <h2 class="old-products__header">Последний шанс</h2>

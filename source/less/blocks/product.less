@@ -2,8 +2,13 @@
   font-family: 'Open Sans';
   font-style: normal;
   color: #303032;
+  text-align: center;
+  background-color: #fff;
 }
 
+.product__image {
+  height: 198px;
+}
 .product__caption {
   font-weight: 400;
   font-size: 20px;
@@ -14,4 +19,19 @@
   font-weight: 600;
   font-size: 28px;
   line-height: 38px;
+}
+
+.product--main{
+  grid-column-start: -3;
+  grid-column-end: -1;
+  grid-row-start: 1;
+  grid-row-end: 3;
+}
+
+.product--main .product__image{
+  height: 466px;
+}
+
+.product--highlight {
+  background-color: #faece9;
 }

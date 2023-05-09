@@ -2,22 +2,46 @@
   font-family: 'Open Sans';
   font-style: normal;
   font-weight: 400;
+  display: grid;
+  grid-template-columns: auto 72px;
+  height: 750px;
+  margin-bottom: 140px;
+}
+
+.prima-fitch__item {
+  position: relative;
 }
 
 .prima-fitch__caption {
   font-size: 20px;
   line-height: 27px;
+  padding-top: 423px;
 }
 
 .prima-fitch__cost {
   font-size: 20px;
   line-height: 27px;
+  display: grid;
+  grid-template-columns: min-content min-content;
+  gap: 22px;
+  align-items: center;
+  padding-top: 12px;
+  margin-bottom: 35px;
 }
 
-.prima-fitch__best-cost {
+.prima-fitch__cost--best {
   font-weight: 600;
   font-size: 30px;
   line-height: 41px;
+}
+
+.prima-fitch__pagination {
+  padding-left: 11px;
+  padding-top: 312px;
+  padding-right: 125px;
+  margin: 0;
+  margin-right: -135px;
+  width: 100%;
 }
 
 .prima-fitch__button {
@@ -33,4 +57,8 @@
   display: flex;
   justify-content: center;
   align-items: center;
+}
+.prima-fitch__image {
+  position: absolute;
+  right: 0;
 }
