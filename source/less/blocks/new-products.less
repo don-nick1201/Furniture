@@ -22,5 +22,15 @@
   line-height: 37px;
   letter-spacing: 0.05em;
   color: #303032;
+  text-transform: uppercase;
+  position: relative;
+}
 
+.new-products__header h2::after{
+  content: '';
+  border-bottom: solid 4px #303032;
+  width:90px;
+  position: absolute;
+  bottom: -10px;
+  left: 0;
 }

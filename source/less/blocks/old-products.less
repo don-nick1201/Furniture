@@ -1,0 +1,83 @@
+.old-products {
+  background-image: url(../img/pink_rectangle.svg);
+  background-repeat: no-repeat;
+  background-size: 815px 545px;
+  background-position: left top;
+}
+.old-products__header {
+  font-family: 'Playfair Display';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 37px;
+  letter-spacing: 0.05em;
+  color: #303032;
+  text-transform: uppercase;
+  position: relative;
+  margin-bottom: 48px;
+}
+
+.old-products__header::after {
+  content: '';
+  border-bottom: solid 4px #303032;
+  width:90px;
+  position: absolute;
+  bottom: -10px;
+  left: 0;
+}
+
+.old-products__tabs {
+  font-size: 0;
+}
+
+.old-products__tabs>input[type="radio"] {
+  display: none;
+}
+
+.old-products__tabs>div {
+  /* скрыть контент по умолчанию */
+  display: none;
+  padding: 10px 15px;
+  font-size: 16px;
+}
+
+ /* отобразить контент, связанный с вабранной радиокнопкой (input type="radio") */
+ #tab-btn-1:checked~#content-1,
+ #tab-btn-2:checked~#content-2,
+ #tab-btn-3:checked~#content-3 {
+   display: block;
+ }
+
+ .old-products__tabs>label {
+  display: inline-block;
+  text-align: center;
+  vertical-align: middle;
+  user-select: none;
+  padding: 2px 8px;
+
+  color: rgba(0, 0, 0, 0.40);
+  font-family: Open Sans;
+  font-weight: 600;
+  line-height: 153.885%; 
+
+  font-size: 16px;
+  line-height: 1.5;
+  cursor: pointer;
+  position: relative;
+  top: 1px;
+  margin-bottom: 25px;
+}
+
+.old-products__tabs>label:not(:first-of-type) {
+  border-left: none;
+}
+
+.old-products__tabs>input[type="radio"]:checked+label {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.40);
+  color: #000;
+}
+
+.old-products__list {
+  display: flex;
+  flex-direction: row;
+}
