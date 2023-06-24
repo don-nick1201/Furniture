@@ -35,9 +35,9 @@
       </div>
     </header>
     <main class="page-main">
-      <div class="page-wrapper">
-        <h1 class="page-main__main-header">Дизайнерская<br>мебель</h1>
-        <section class="prima-fitch">
+      <section class="prima-fitch">
+        <div class="page-wrapper">
+          <h1 class="page-main__main-header">Дизайнерская<br>мебель</h1>
           <div class="prima-fitch__list">
             <div class="prima-fitch__item">
               <img class="prima-fitch__image" src="img/armchair_antikva.png"></img>
@@ -58,14 +58,10 @@
               <a href="#" class="prima-fitch__button">Купить</a>
             </div>
           </div>
-          <ul class="prima-fitch__pagination pagination">
-            <li class="pagination__item pagination__item--active"><a>01</a></li>
-            <li class="pagination__item"><a>02</a></li>
-            <li class="pagination__item"><a>03</a></li>
-            <li class="pagination__item"><a>04</a></li>
-          </ul>
-        </section>
-        <section class="new-products">
+        </div>
+      </section>
+      <section class="new-products">
+        <div class="page-wrapper">
           <ul class="new-products__list">
             <li class="new-products__header"><h2>Новинки</h2></li>
             <li class="new-products__element product">
@@ -89,8 +85,10 @@
               <div class="product__cost">$120</div>
             </li>
           </ul>
-        </section>
-        <section class="reviews-sec">
+        </div>
+      </section>
+      <section class="reviews-sec">
+        <div class="page-wrapper">
           <h2 class="reviews-sec__header visually-hidden">Отзывы</h2>
           <div class="reviews">
             <a href="" class="reviews__left-narrow"><img src="img/arrow-left.svg" alt="Предидущий"></a>
@@ -107,8 +105,10 @@
               </li>
             </ul>
           </div>
-        </section>
-        <section class="old-products">
+        </div>
+      </section>
+      <section class="old-products">
+        <div class="page-wrapper">
           <h2 class="old-products__header">Последний шанс</h2>
           <div class="old-products__tabs">
             <input type="radio" name="tab-btn" id="tab-btn-1" value="" checked>
@@ -119,106 +119,112 @@
             <label for="tab-btn-3">Кресла</label>
             <div id="content-1">
               <ul class="old-products__list">
-                <li class="new-products__element">
-                  <div class="product__image"><img src="img/old_chear1.jpg" alt="Первый стул"></div>
-                  <div class="product__caption">Стул "Карамель"</div>
-                  <div class="product__cost">$120</div>
+                <li class="old-products__element">
+                  <h3 class="product__caption">Стул "Карамель"</h3>
+                  <p class="product__cost">$120<span>$150</span></p>
+                  <img class="product__image" src="img/old_chear1.jpg" alt="Первый стул">
                 </li>
-                <li class="new-products__element">
-                  <div class="product__image"><img src="img/old_chear2.jpg" alt="Второй стул"></div>
-                  <div class="product__caption">Стул "Крем брюле"</div>
-                  <div class="product__cost">$120</div>
+                <li class="old-products__element">
+                  <h3 class="product__caption">Стул "Крем брюле"</h3>
+                  <p class="product__real-cost">$120<span>$150</span></p>
+                  <img class="product__image" src="img/old_chear2.jpg" alt="Второй стул">
                 </li>
-                <li class="new-products__element">
-                  <div class="product__image"><img src="img/old_chear3.jpg" alt="третий стул"></div>
-                  <div class="product__caption">Стул "Крем брюле"</div>
-                  <div class="product__cost">$120</div>
+                <li class="old-products__element">
+                  <h3 class="product__caption">Стул "Крем брюле"</h3>
+                  <p class="product__cost">$120<span>$150</span></p>
+                  <img class="product__image" src="img/old_chear3.jpg" alt="третий стул">
                 </li>
-                <li class="new-products__element">
-                  <div class="product__image"><img src="img/old_chear4.jpg" alt="Четвертый стул"></div>
-                  <div class="product__caption">Стул "Крем брюле"</div>
-                  <div class="product__cost">$120</div>
+                <li class="old-products__element">
+                  <h3 class="product__caption">Стул "Крем брюле"</h3>
+                  <p class="product__cost">$120<span>$150</span></p>
+                  <img class="product__image" src="img/old_chear4.jpg" alt="Четвертый стул">
                 </li>
-                <li class="new-products__element">
-                  <div class="product__image"><img src="img/old_chear5.jpg" alt="Пятый стул"></div>
-                  <div class="product__caption">Стул "Крем брюле"</div>
-                  <div class="product__cost">$120</div>
+                <li class="old-products__element">
+                  <h3 class="product__caption">Стул "Крем брюле"</h3>
+                  <p class="product__cost">$120<span>$150</span></p>
+                  <img class="product__image" src="img/old_chear5.jpg" alt="Пятый стул">
                 </li>
               </ul>
             </div>
             <div id="content-2">
               <ul class="old-products__list">
-                <li class="new-products__element">
-                  <div class="product__image"></div>
-                  <div class="product__caption">Стул "Карамель"</div>
-                  <div class="product__cost">$220</div>
+                <li class="old-products__element">
+                  <h3 class="product__caption">Стул "Карамель"</h3>
+                  <p class="product__cost">$220<span>$330</span></p>
+                  <img class="product__image">
                 </li>
-                <li class="new-products__element">
-                  <div class="product__image"></div>
-                  <div class="product__caption">Стул "Крем брюле"</div>
-                  <div class="product__cost">$220</div>
+                <li class="old-products__element">
+                  <h3 class="product__caption">Стул "Крем брюле"</h3>
+                  <p class="product__cost">$220<span>$330</span></p>
+                  <img class="product__image">
                 </li>
-                <li class="new-products__element">
-                  <div class="product__image"></div>
-                  <div class="product__caption">Стул "Крем брюле"</div>
-                  <div class="product__cost">$220</div>
+                <li class="old-products__element">
+                  <h3 class="product__caption">Стул "Крем брюле"</h3>
+                  <p class="product__cost">$220<span>$330</span></p>
+                  <img class="product__image">
                 </li>
-                <li class="new-products__element">
-                  <div class="product__image"></div>
-                  <div class="product__caption">Стул "Крем брюле"</div>
-                  <div class="product__cost">$220</div>
+                <li class="old-products__element">
+                  <h3 class="product__caption">Стул "Крем брюле"</h3>
+                  <p class="product__cost">$220<span>$330</span></p>
+                  <img class="product__image">
                 </li>
-                <li class="new-products__element">
-                  <div class="product__image"></div>
-                  <div class="product__caption">Стул "Крем брюле"</div>
-                  <div class="product__cost">$220</div>
+                <li class="old-products__element">
+                  <h3 class="product__caption">Стул "Крем брюле"</h3>
+                  <p class="product__cost">$220<span>$330</span></p>
+                  <img class="product__image">
                 </li>
               </ul>
             </div>
             <div id="content-3">
               <ul class="old-products__list">
-                <li class="new-products__element">
-                  <div class="product__image"></div>
-                  <div class="product__caption">Стул "Карамель"</div>
-                  <div class="product__cost">$320</div>
+                <li class="old-products__element">
+                  <h3 class="product__caption">Стул "Карамель"</h3>
+                  <p class="product__cost">$320<span>$430</span></p>
+                  <img class="product__image">
                 </li>
-                <li class="new-products__element">
-                  <div class="product__image"></div>
-                  <div class="product__caption">Стул "Крем брюле"</div>
-                  <div class="product__cost">$320</div>
+                <li class="old-products__element">
+                  <h3 class="product__caption">Стул "Крем брюле"</h3>
+                  <p class="product__cost">$320<span>$430</span></p>
+                  <img class="product__image">
                 </li>
-                <li class="new-products__element">
-                  <div class="product__image"></div>
-                  <div class="product__caption">Стул "Крем брюле"</div>
-                  <div class="product__cost">$320</div>
+                <li class="old-products__element">
+                  <h3 class="product__caption">Стул "Крем брюле"</h3>
+                  <p class="product__cost">$320<span>$430</span></p>
+                  <img class="product__image">
                 </li>
-                <li class="new-products__element">
-                  <div class="product__image"></div>
-                  <div class="product__caption">Стул "Крем брюле"</div>
-                  <div class="product__cost">$320</div>
+                <li class="old-products__element">
+                  <h3 class="product__caption">Стул "Крем брюле"</h3>
+                  <p class="product__cost">$320<span>$430</span></p>
+                  <img class="product__image">
                 </li>
-                <li class="new-products__element">
-                  <div class="product__image"></div>
-                  <div class="product__caption">Стул "Крем брюле"</div>
-                  <div class="product__cost">$320</div>
+                <li class="old-products__element">
+                  <h3 class="product__caption">Стул "Крем брюле"</h3>
+                  <p class="product__cost">$320<span>$430</span></p>
+                  <img class="product__image">
                 </li>
               </ul>
             </div>
           </div>
-        </section>
-      </div>
+        </div>
+      </section>
     </main>
     <footer>
-      <img src="img/logo.svg" alt="Логотип" class="logo">
-      <p><img src="img/icons-phone.png" alt="Телефон">+7(495) 205-28-14</p>
-      <a href="mailto:callium@gmail.com"><img src="img/icons-new-post.png" alt="Письмо">callium@gmail.com</a>
-      <ul>
-        <li><a href="blank.html">Доставка</a></li>
-        <li><a href="blank.html">Оплата</a></li>
-        <li><a href="blank.html">Контакты</a></li>
-        <li><a href="blank.html">Гарантии</a></li>
-      </ul>
-      <p>© 2018 «Callium» — Сайт по продаже дизайнерской мебели. Все права защищены.</p>
+      <div class="page-wrapper">
+        <div class="footer__elements">
+          <img src="img/logo.svg" alt="Логотип" class="logo">
+          <ul class="footer__menu">
+            <li><a href="blank.html">Доставка</a></li>
+            <li><a href="blank.html">Оплата</a></li>
+            <li><a href="blank.html">Контакты</a></li>
+            <li><a href="blank.html">Гарантии</a></li>
+          </ul>
+          <div class="footer__contacts">
+            <a href="tel:+74952052814"><img src="img/icons-phone.png" alt="Телефон">+7(495) 205-28-14</a>
+            <a href="mailto:callium@gmail.com"><img src="img/icons-new-post.png" alt="Письмо">callium@gmail.com</a>
+          </div>
+        </div>
+        <p class="footer__copyright">© 2018 «Callium» — Сайт по продаже дизайнерской мебели. Все права защищены.</p>
+      </div>
     </footer>
   </body>
 </html>

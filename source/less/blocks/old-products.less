@@ -3,6 +3,7 @@
   background-repeat: no-repeat;
   background-size: 815px 545px;
   background-position: left top;
+  margin-bottom: 166px;
 }
 .old-products__header {
   font-family: 'Playfair Display';
@@ -14,6 +15,7 @@
   color: #303032;
   text-transform: uppercase;
   position: relative;
+  padding-top: 73px;
   margin-bottom: 48px;
 }
 
@@ -37,7 +39,7 @@
 .old-products__tabs>div {
   /* скрыть контент по умолчанию */
   display: none;
-  padding: 10px 15px;
+  padding-top: 10px;
   font-size: 16px;
 }
 
@@ -78,6 +80,41 @@
 }
 
 .old-products__list {
+  list-style: none;
   display: flex;
   flex-direction: row;
+  gap: 30px;
+  margin-left: 0;
+  padding-left: 0;
+}
+
+.old-products__element {
+  width: 209px;
+  height: 355px;
+  background-color: #fff;
+  box-shadow: 0px 0px 25px 0px rgba(0, 0, 0, 0.05);
+}
+
+.old-products__element h3{
+  font-size: 16px;
+  font-family: "Open Sans"; 
+}
+
+.old-products__element p {
+  color: #303032;
+  font-size: 28px;
+  font-family: "Open Sans";
+  font-weight: 600; 
+  padding-left: 26px;
+}
+
+.old-products__element p span{
+  font-size: 16px;
+  text-decoration-line: line-through;
+  opacity: 0.5;
+  padding-left: 11px;
+}
+
+.old-products__element img{
+  float: right;
 }
