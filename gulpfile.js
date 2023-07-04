@@ -6,6 +6,26 @@ const postcss = require("gulp-postcss");
 const autoprefixer = require("autoprefixer");
 const sync = require("browser-sync").create();
 
+function vendorJS() {
+  const modules = [
+    'node_modules/swiper/swiper-bundle.min.js',
+    'node_modules/swiper/swiper-bundle.min.js.map',
+  ];
+
+  return gulp.src(modules)
+    .pipe(gulp.dest('source/js'));
+};
+
+function vendorCSS() {
+  const modules = [
+    'node_modules/swiper/swiper-bundle.min.css',
+  ];
+
+  return gulp.src(modules)
+    .pipe(gulp.dest('source/css/pages'));
+};
+
+
 // Styles
 
 const styles = () => {
@@ -27,6 +47,8 @@ exports.styles = styles;
 //build
 
 const build = gulp.series(
+  vendorCSS,
+  vendorJS,
   styles
 );
 
@@ -61,5 +83,5 @@ const watcher = () => {
 }
 
 exports.default = gulp.series(
-  styles, server, watcher
+  styles, vendorCSS, vendorJS, server, watcher
 );

@@ -1,24 +1,21 @@
 .reviews {
-  display: grid;
-  grid-template-columns: auto auto auto;
-  align-items: center;
-  justify-items: center;
+  position: relative;
+  margin: 0;
 }
 
 .reviews__left-narrow,
 .reviews__right-narrow {
   padding-bottom: 10px;
+  position: absolute;
+  z-index: 1;
+  top: 85px;
 }
 .reviews__left-narrow {
-  grid-column-start: 1;
-  grid-column-end: 2;
-  padding-left: 155px;
+  left: 150px;
 }
 
 .reviews__right-narrow {
-  grid-column-start: -2;
-  grid-column-end: -1;
-  padding-right: 155px;
+  right: 150px;
 }
 
 .reviews__list {
@@ -30,6 +27,7 @@
   padding-left: 0;
 }
 
-.reviews__navigation {
-  display: grid;
+.reviews__pagination {
+  text-align: center;
+  z-index: 1;
 }

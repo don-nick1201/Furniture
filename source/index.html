@@ -11,6 +11,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,600;0,700;1,400&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="./css/pages/swiper-bundle.min.css">
   <link rel="stylesheet" href="css/style.css">
 </head>
   <body class="page">
@@ -90,11 +91,9 @@
       <section class="reviews-sec">
         <div class="page-wrapper">
           <h2 class="reviews-sec__header visually-hidden">Отзывы</h2>
-          <div class="reviews">
-            <a href="" class="reviews__left-narrow"><img src="img/arrow-left.svg" alt="Предидущий"></a>
-            <a href="" class="reviews__right-narrow"><img src="img/arrow-right.svg" alt="Следующий"></a>
-            <ul class="reviews__list">
-              <li class="reviews__item review">
+          <div class="swiper reviews">
+            <div class="swiper-wrapper reviews__list">
+              <div class="swiper-slide">
                 <div class="review__owner reviewer">
                   <img class="reviewer__avatar" src="img/avatar.jpg" alt="Елена Новикова" class="reviewer__avatar">
                   <h3 class="reviewer__name">Елена Новикова</h3>
@@ -102,8 +101,36 @@
                 </div>
                 <p class="review__text">«Хочу поделиться своими впечатлениями по использованию дивана «Бродвей», 
             заказывала в конце 2016 года. Держится великолепно. Спасибо, большое сотрудникам этого чудесного магазина.»</p>
-              </li>
-            </ul>
+              </div>
+              <div class="swiper-slide">
+                <div class="review__owner reviewer">
+                  <img class="reviewer__avatar" src="img/team1.jpg" alt="Иван Петров" class="reviewer__avatar">
+                  <h3 class="reviewer__name">Иван Петров</h3>
+                  <p class="reviewer__activity">студент</p>
+                </div>
+                <p class="review__text">«Разнообразный и богатый опыт говорит нам, что убеждённость некоторых оппонентов однозначно фиксирует необходимость переосмысления внешнеэкономических политик. Для современного мира внедрение современных методик в значительной степени обусловливает важность позиций, занимаемых участниками в отношении поставленных задач.»</p>
+              </div>
+              <div class="swiper-slide">
+                <div class="review__owner reviewer">
+                  <img class="reviewer__avatar" src="img/team3.jpg" alt="Елена Новикова" class="reviewer__avatar">
+                  <h3 class="reviewer__name">Елена Новикова</h3>
+                  <p class="reviewer__activity">студентка</p>
+                </div>
+                <p class="review__text">«Хочу поделиться своими впечатлениями по использованию дивана «Бродвей», 
+            заказывала в конце 2016 года. Держится великолепно. Спасибо, большое сотрудникам этого чудесного магазина.»</p>
+              </div>
+              <div class="swiper-slide">
+                <div class="review__owner reviewer">
+                  <img class="reviewer__avatar" src="img/team2.jpg" alt="Иван Петров" class="reviewer__avatar">
+                  <h3 class="reviewer__name">Иван Петров</h3>
+                  <p class="reviewer__activity">студент</p>
+                </div>
+                <p class="review__text">«Разнообразный и богатый опыт говорит нам, что убеждённость некоторых оппонентов однозначно фиксирует необходимость переосмысления внешнеэкономических политик. Для современного мира внедрение современных методик в значительной степени обусловливает важность позиций, занимаемых участниками в отношении поставленных задач.»</p>
+              </div>
+            </div>
+            <div class="reviews__right-narrow"><img src="img/arrow-right.svg" alt=""></div>
+            <div class="reviews__left-narrow"><img src="img/arrow-left.svg" alt=""></div>
+            <div class="reviews__pagination"></div>
           </div>
         </div>
       </section>
@@ -226,5 +253,7 @@
         <p class="footer__copyright">© 2018 «Callium» — Сайт по продаже дизайнерской мебели. Все права защищены.</p>
       </div>
     </footer>
+    <script src="js/swiper-bundle.min.js"></script>
+    <script src="js/script.js"></script>
   </body>
 </html>

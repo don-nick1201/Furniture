@@ -47,5 +47,8 @@
   ],
   "engines": {
     "node": "14.15.0"
+  },
+  "dependencies": {
+    "swiper": "^9.4.1"
   }
 }
