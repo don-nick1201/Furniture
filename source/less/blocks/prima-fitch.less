@@ -13,6 +13,10 @@
   background-position: right -126px;
 }
 
+.prima-fitch__slider {
+  position: relative;
+}
+
 .prima-fitch__item {
   position: relative;
 }
@@ -40,13 +44,39 @@
   line-height: 41px;
 }
 
-.prima-fitch__pagination {
-  padding-left: 11px;
-  padding-top: 312px;
-  padding-right: 125px;
-  margin: 0;
-  margin-right: -135px;
-  width: 100%;
+.prima-fitch .prima-fitch__slider .prima-fitch__pagination {
+  // display:flex;
+  // flex-direction: column;
+  position: absolute;
+  right: 0;
+  width: 40px;
+  left: 95%;
+  top:54%;
+  z-index: 1;
+}
+.prima-fitch__pagination-bullet {
+  color: rgba(0, 0, 0, 0.30);
+  font-family: "Playfair Display";
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 100%;
+  letter-spacing: 1px;
+  text-transform: uppercase; 
+  display: block;
+  width: 20px;
+  height: 20px;
+  margin-bottom: 25px;
+}
+
+.prima-fitch__pagination-bullet--active{
+  color: #000;
+  font-size: 40px;
+  font-weight: 400;
+  letter-spacing: 2px;
+  width: 55px;
+  height: 55px;
+  border-right: 4px solid black;
 }
 
 .prima-fitch__button {
@@ -66,4 +96,7 @@
 .prima-fitch__image {
   position: absolute;
   right: 0;
+  width: 530px;
+  height: 750px;
+  object-fit: contain;
 }
