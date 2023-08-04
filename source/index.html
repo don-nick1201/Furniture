@@ -18,20 +18,35 @@
     <header>
       <div class="page-wrapper">
         <nav class="main-nav">
-          <!-- Список верхний состоит из фавиконки строки поиска и кнопки меню -->
           <img src="img/logo.svg" alt="Логотип магазина" class="main-nav__logo">
-          <ul class="main-nav__menu">
-            <li class="main-nav__menu-item">Мебель</li>
-            <li class="main-nav__menu-item">Освещение</li>
-            <li class="main-nav__menu-item">Текстиль</li>
-            <li class="main-nav__menu-item">Водопровод</li>
-          </ul>
           <form action="https://echo.htmlacademy.ru" method="post" class="main-nav__serchform">
             <input type="serch" name="serch-field" id="serch-field">
             <button type="submit"><img src="img/Vector.svg" alt="Лупа" srcset=""></button>
           </form>
           <img class="main-nav__basket" src="img/EmptyBasket.svg" width=33 height=28 alt="Корзина">
-          <button class="main-nav__menu-button"><img src="img/ClosedMenu.svg" alt=""></button>
+          <div class="main-nav__wrapper main-nav--closed">
+            <!-- Список верхний состоит из фавиконки строки поиска и кнопки меню -->
+            <button class="main-nav__close" type="button">
+              <svg class="main-nav__botton-cross" width="30" height="30" viewBox="1 1 30 30" fill=none>
+                <line x1="3" x2="27" y1="3" y2="27" stroke-width="4" stroke="white"></line>
+                <line x1="3" x2="27" y1="27" y2="3" stroke-width="4" stroke="white"></line>
+              </svg>
+            </button>
+            <ul class="main-nav__menu">
+              <li class="main-nav__menu-item">Мебель</li>
+              <li class="main-nav__menu-item">Освещение</li>
+              <li class="main-nav__menu-item">Текстиль</li>
+              <li class="main-nav__menu-item">Водопровод</li>
+            </ul>
+                    <!-- Кнопка вызова меню -->
+            <button class="main-nav__toggle" type="button">
+              <svg class="main-nav__botton-line" width="27" height="21" viewBox="0 0 27 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M1 1H26" stroke="#313133" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M1 9H26" stroke="#313133" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M1 18H26" stroke="#313133" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </button>
+          </div>
         </nav>
       </div>
     </header>
@@ -79,6 +94,7 @@
                 </div>
               </div>
             <div class="prima-fitch__pagination"></div>
+            <div class="prima-fitch__scrollbar"></div>
           </div>
         </div>
       </section>

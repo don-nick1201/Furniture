@@ -1,20 +1,32 @@
 .prima-fitch {
+  max-width: 320px;
+  margin: 0 auto;
   font-family: 'Open Sans';
   font-style: normal;
   font-weight: 400;
-  display: grid;
-  grid-template-columns: auto 72px;
   height: 750px;
-  max-width: 1440px;
   margin-bottom: 140px;
   background-image: url('../img/pink_rectangle.svg');
-  background-repeat: repeat-y;
-  background-size: 630px;
-  background-position: right -126px;
+  background-repeat: no-repeat;
+  background-size: 480px;
+  background-position: 150px 64px;
+  @media(min-width: @desktop-width) {
+    max-width: 100%;
+    background-position: right -126px;
+    background-repeat: repeat-y;
+    background-size: 630px;
+  }
 }
 
 .prima-fitch__slider {
   position: relative;
+}
+
+.prima-fitch__list {
+  margin-bottom: 36px;
+  @media(min-width: @desktop-width) {
+    margin-bottom: 0;
+  }
 }
 
 .prima-fitch__item {
@@ -24,7 +36,11 @@
 .prima-fitch__caption {
   font-size: 20px;
   line-height: 27px;
-  padding-top: 423px;
+  padding-top: 527px;
+  padding-left: 23px;
+  @media(min-width: @desktop-width) {
+    padding-top: 423px;
+  }
 }
 
 .prima-fitch__cost {
@@ -34,8 +50,14 @@
   grid-template-columns: min-content min-content;
   gap: 22px;
   align-items: center;
-  padding-top: 12px;
-  margin-bottom: 35px;
+  margin-bottom: 27px;
+  padding-left: 22px;
+  padding-top: 10px;
+  @media(min-width: @desktop-width) {
+    padding-left: 0;
+    padding-top: 12px;
+    margin-bottom: 35px;
+  }
 }
 
 .prima-fitch__cost--best {
@@ -47,12 +69,16 @@
 .prima-fitch .prima-fitch__slider .prima-fitch__pagination {
   // display:flex;
   // flex-direction: column;
-  position: absolute;
-  right: 0;
-  width: 40px;
-  left: 95%;
-  top:54%;
-  z-index: 1;
+  float: right;
+  text-align: end;
+  @media(min-width: @desktop-width) {
+    position: absolute;
+    right: 0;
+    width: 40px;
+    left: 95%;
+    top:54%;
+    z-index: 1;
+  }
 }
 .prima-fitch__pagination-bullet {
   color: rgba(0, 0, 0, 0.30);
@@ -69,6 +95,12 @@
   margin-bottom: 25px;
 }
 
+.prima-fitch__pagination {
+  // display: none;
+  // @media(min-width: @desktop-width) {
+    display: block;
+  // }
+}
 .prima-fitch__pagination-bullet--active{
   color: #000;
   font-size: 40px;
@@ -79,6 +111,16 @@
   border-right: 4px solid black;
 }
 
+.prima-fitch__scrollbar {
+  height: 2px;
+  background-color: rgba(20, 18, 21, 0.10);
+  color:#000;
+  width: 226px;
+  margin-left: 26px;
+  @media(min-width: @desktop-width) {
+    display: none;
+  }
+}
 .prima-fitch__button {
   font-size: 16px;
   line-height: 22px;
@@ -86,17 +128,26 @@
   text-transform: uppercase;
   color: #fff;
   text-decoration: none;
-  width: 238px;
+  width: 290px;
   height: 58px;
   background-color: #303032;
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-left: 22px;
+  @media(min-width: @desktop-width) {
+    width: 238px;
+    margin-left: 0;
+  }
 }
 .prima-fitch__image {
   position: absolute;
-  right: 0;
-  width: 530px;
-  height: 750px;
+  width: 320px;
   object-fit: contain;
+  top: 100px;
+  right: 0;
+  @media (min-width: @desktop-width) {
+    width: 530px;
+    height: 750px;
+  }
 }

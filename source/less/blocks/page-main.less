@@ -1,14 +1,22 @@
 .page-main__main-header {
+  color: #303032;
   font-family: 'Playfair Display';
+  font-size: 27px;
   font-style: normal;
   font-weight: 700;
-  font-size: 57px;
-  line-height: 140%;
-  /* or 83px */
-  letter-spacing: 0.05em;
+  line-height: 170%;
+  letter-spacing: 1.35px;
   text-transform: uppercase;
-  color: #303032;
   position: absolute;
-  top: 195px;
   z-index: 1;
+  top: 397px;
+  left: 25px;
+  @media (min-width: @desktop-width) {
+    font-weight: 700;
+    font-size: 57px;
+    line-height: 140%;
+    /* or 83px */
+    letter-spacing: 0.05em;
+    top: 195px;
+  }
 }

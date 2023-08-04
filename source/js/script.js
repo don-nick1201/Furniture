@@ -1,3 +1,8 @@
+function pad(num, size) {
+  num = num.toString();
+  while (num.length < size) num = "0" + num;
+  return num;
+}
 const swiper = new Swiper(".reviews", {
   centeredSlides: true,
     navigation: {
@@ -14,11 +19,25 @@ const swiper = new Swiper(".reviews", {
     pagination: {
       el: ".prima-fitch__pagination",
       clickable: true,
+      type: 'fraction',
+      brakepoints: {
+        1270: {type: 'bullets'},
+      },
       bulletClass: "prima-fitch__pagination-bullet",
       bulletActiveClass: "prima-fitch__pagination-bullet--active",
       renderBullet: function (index, className) {
         return '<span class="' + className + '">0' + (index + 1) + "</span>";
       },
+      renderFraction: function (currentClass, totalClass) {
+        return '0<span class="' + currentClass + '"></span>' +
+                '/0' +
+                '<span class="' + totalClass + '"></span>';
+      }
+    },
+    scrollbar: {
+      el: ".prima-fitch__scrollbar",
+      hide: false,
+      draggable: true,
     },
     });
   
