@@ -20,9 +20,6 @@ const swiper = new Swiper(".reviews", {
       el: ".prima-fitch__pagination",
       clickable: true,
       type: 'fraction',
-      brakepoints: {
-        1270: {type: 'bullets'},
-      },
       bulletClass: "prima-fitch__pagination-bullet",
       bulletActiveClass: "prima-fitch__pagination-bullet--active",
       renderBullet: function (index, className) {
@@ -38,6 +35,9 @@ const swiper = new Swiper(".reviews", {
       el: ".prima-fitch__scrollbar",
       hide: false,
       draggable: true,
+    },
+    breakpoints: {
+      1270: {pagination: {type: 'bullets'}}
     },
     });
   
