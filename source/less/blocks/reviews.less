@@ -1,6 +1,10 @@
 .reviews {
+  display: none;
   position: relative;
   margin: 0;
+  @media(min-width: @desktop-width) {
+    display: block;
+  }
 }
 
 .reviews__left-narrow,

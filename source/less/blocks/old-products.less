@@ -1,9 +1,13 @@
 .old-products {
+  max-width: 320px;
   background-image: url(../img/pink_rectangle.svg);
   background-repeat: no-repeat;
   background-size: 815px 545px;
   background-position: left top;
-  margin-bottom: 166px;
+  margin: 0 auto 166px auto;
+  @media(min-width: @desktop-width) {
+    max-width: @desktop-width;
+  }
 }
 .old-products__header {
   font-family: 'Playfair Display';
@@ -89,10 +93,14 @@
 }
 
 .old-products__element {
-  width: 209px;
-  height: 355px;
+  width: 288px;
+  height: 400px;
   background-color: #fff;
   box-shadow: 0px 0px 25px 0px rgba(0, 0, 0, 0.05);
+  @media(min-width: @desktop-width) {
+    width: 209px;
+    height: 355px;
+  }
 }
 
 .old-products__element h3{

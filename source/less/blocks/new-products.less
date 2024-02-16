@@ -4,26 +4,39 @@
 
 .new-products__list {
   list-style: none;
-  display: grid;
-  grid-template-columns: 270px 270px 270px 270px;
-  grid-template-rows: 289px 289px;
-  gap: 30px;
   padding-left: 6px;
+  margin-top: 0;
+  @media(min-width: @desktop-width) {
+    display: grid;
+    grid-template-columns: 270px 270px 270px 270px;
+    grid-template-rows: 289px 289px;
+    gap: 30px;
+  }
 }
 
 .new-products__header {
-  align-self: center;
+  padding-left: 10px;
+  padding-top: 51px;
+  padding-bottom: 52px;
+  @media(min-width: @desktop-width) {
+    align-self: center;
+    padding-left: 37px;
+    padding-bottom: 44px;
+  }
 }
 .new-products__header h2{
   font-family: 'Playfair Display';
   font-style: normal;
   font-weight: 700;
-  font-size: 28px;
+  font-size: 20px;
   line-height: 37px;
   letter-spacing: 0.05em;
   color: #303032;
   text-transform: uppercase;
   position: relative;
+  @media(min-width: @desktop-width) {
+    font-size: 28px;
+  }
 }
 
 .new-products__header h2::after{
@@ -33,4 +46,7 @@
   position: absolute;
   bottom: -10px;
   left: 0;
+  @media(min-width: @desktop-width) {
+    left: 0;
+  }
 }

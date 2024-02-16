@@ -2,6 +2,9 @@ const gulp = require("gulp");
 const plumber = require("gulp-plumber");
 const sourcemap = require("gulp-sourcemaps");
 const less = require("gulp-less");
+const htmlmin = require('gulp-htmlmin');
+const terser = require('gulp-terser');
+const rename = require("gulp-rename");
 const postcss = require("gulp-postcss");
 const autoprefixer = require("autoprefixer");
 const sync = require("browser-sync").create();
@@ -13,7 +16,7 @@ function vendorJS() {
   ];
 
   return gulp.src(modules)
-    .pipe(gulp.dest('source/js'));
+    .pipe(gulp.dest('build/js'));
 };
 
 function vendorCSS() {
@@ -22,9 +25,19 @@ function vendorCSS() {
   ];
 
   return gulp.src(modules)
-    .pipe(gulp.dest('source/css/pages'));
+    .pipe(gulp.dest('build/css/pages'));
 };
 
+// HTML
+
+const html = () => {
+  return gulp.src('source/*.html')
+    .pipe(htmlmin({ collapseWhitespace: true }))
+    .pipe(gulp.dest('build'))
+    .pipe(sync.stream());
+};
+
+exports.html
 
 // Styles
 
@@ -37,18 +50,44 @@ const styles = () => {
       autoprefixer()
     ]))
     .pipe(sourcemap.write("."))
-    .pipe(gulp.dest("source/css"))
+    .pipe(gulp.dest("build/css"))
     .pipe(sync.stream());
 }
 
 exports.styles = styles;
 
+// copyImages
+
+const copyImages = () => {
+  return gulp.src("source/img/**/*.{jpg,png,svg}")
+  .pipe(gulp.dest("build/img"))
+}
+
+exports.copyImages = copyImages;
+
+// Scripts
+
+  const scripts = () => {
+    return gulp.src('./source/js/script.js')
+      .pipe(sourcemap.init())
+      .pipe(terser())
+      .pipe(rename('script.min.js'))
+      .pipe(sourcemap.write("."))
+      .pipe(gulp.dest('./build/js'))
+      .pipe(sync.stream());
+  }
+    
+  exports.scripts = scripts;
+   
 
 //build
 
 const build = gulp.series(
   vendorCSS,
   vendorJS,
+  scripts,
+  copyImages,
+  html,
   styles
 );
 
