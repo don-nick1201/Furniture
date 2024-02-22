@@ -407,10 +407,13 @@ h2 {
 }
 .product__image {
   margin-bottom: 6px;
+  max-width: 320px;
+  max-height: 260px;
 }
 @media (min-width: 1270px) {
   .product__image {
     height: 198px;
+    width: 209px;
   }
 }
 .product__caption {
@@ -430,6 +433,9 @@ h2 {
   line-height: 38px;
 }
 .product__buy-bttn {
+  position: absolute;
+  left: 0;
+  bottom: -60px;
   color: #FFF;
   text-align: center;
   font-size: 16px;
@@ -589,6 +595,7 @@ h2 {
   display: none;
   padding-top: 10px;
   font-size: 16px;
+  padding-bottom: 60px;
 }
 /* отобразить контент, связанный с вабранной радиокнопкой (input type="radio") */
 #tab-btn-1:checked ~ #content-1,
@@ -624,23 +631,24 @@ h2 {
 }
 .old-products__list {
   list-style: none;
-  display: flex;
-  flex-direction: row;
-  gap: 30px;
   margin-left: 0;
   padding-left: 0;
 }
 .old-products__element {
-  width: 288px;
-  height: 400px;
+  width: 320px;
+  height: 335px;
+  position: relative;
   background-color: #fff;
   box-shadow: 0px 0px 25px 0px rgba(0, 0, 0, 0.05);
 }
 @media (min-width: 1270px) {
   .old-products__element {
     width: 209px;
-    height: 355px;
+    height: 425px;
   }
+}
+.old-products__pagination {
+  min-height: 10px;
 }
 .old-products__element h3 {
   font-size: 16px;
@@ -669,19 +677,38 @@ h2 {
   border-bottom: solid 1px rgba(0, 0, 0, 0.8);
   padding-bottom: 30px;
 }
-.footer__elements img {
-  grid-column-start: 1;
-  grid-column-end: 2;
+.footer-logo {
+  grid-column: 1/2;
   vertical-align: bottom;
+  margin-bottom: 25px;
+}
+@media (min-width: 1270px) {
+  .footer-logo {
+    grid-column: 1/2;
+    margin-bottom: 0;
+    vertical-align: bottom;
+  }
 }
 .footer__menu {
-  grid-column-start: 2;
-  grid-column-end: 3;
+  grid-column: 1/3;
+  grid-row: 3/5;
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
   list-style: none;
   padding-left: 0;
+  padding-top: 20px;
+  gap: 20px;
   justify-content: space-between;
+}
+@media (min-width: 1270px) {
+  .footer__menu {
+    grid-column: 2/3;
+    grid-row: 2/3;
+    flex-wrap: nowrap;
+    padding-top: 0;
+    margin-top: 0;
+  }
 }
 .footer__menu a {
   text-transform: uppercase;
@@ -695,16 +722,25 @@ h2 {
   letter-spacing: 0.7px;
 }
 .footer__contacts {
+  grid-column: 1/3;
+  grid-row: 2/3;
   display: flex;
-  flex-direction: row;
-  justify-content: start;
-  gap: 50px;
+  flex-direction: column;
+  gap: 20px;
+}
+@media (min-width: 1270px) {
+  .footer__contacts {
+    flex-direction: row;
+    justify-content: start;
+    gap: 50px;
+  }
 }
 .footer__contacts a {
   text-decoration: none;
   color: #303032;
   font-size: 16px;
   font-family: Roboto;
+  font-stretch: normal;
 }
 .footer__contacts img {
   margin-right: 7px;

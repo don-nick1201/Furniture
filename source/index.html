@@ -11,7 +11,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,600;0,700;1,400&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/normalize.css">
-  <link rel="stylesheet" href="./css/pages/swiper-bundle.min.css">
+  <link rel="stylesheet" href="css/pages/swiper-bundle.min.css">
   <link rel="stylesheet" href="css/style.css">
 </head>
   <body class="page">
@@ -54,7 +54,7 @@
       <section class="prima-fitch">
         <div class="page-wrapper">
           <h1 class="page-main__main-header">Дизайнерская<br>мебель</h1>
-          <div class="swiper prima-fitch__slider">
+          <div class="prima-fitch__slider swiper">
               <div class="swiper-wrapper prima-fitch__list">
                 <div class="swiper-slide prima-fitch__item">
                   <img class="prima-fitch__image" src="img/armchair_antikva.png"></img>
@@ -128,7 +128,7 @@
       <section class="reviews">
         <div class="page-wrapper">
           <h2 class="reviews-sec__header visually-hidden">Отзывы</h2>
-          <div class="swiper reviews">
+          <div class="swiper reviews-slider">
             <div class="swiper-wrapper reviews__list">
               <div class="swiper-slide">
                 <div class="review__owner reviewer">
@@ -181,107 +181,109 @@
             <label for="tab-btn-2">Диваны</label>
             <input type="radio" name="tab-btn" id="tab-btn-3" value="">
             <label for="tab-btn-3">Кресла</label>
-            <div id="content-1">
-              <ul class="old-products__list">
-                <li class="old-products__element product">
+            <!-- Стулья -->
+            <div id="content-1" class="swiper content-1">
+              <div class="swiper-wrapper old-products__list">
+                <div class="swiper-slide old-products__element product">
                   <h3 class="product__caption">Стул "Карамель"</h3>
                   <p class="product__cost">$120<span>$150</span></p>
                   <img class="product__image" src="img/old_chear1.jpg" alt="Первый стул">
                   <button class="product__buy-bttn">Купить</button>
-                </li>
-                <li class="old-products__element product">
+                </div>
+                <div class="swiper-slide old-products__element product">
                   <h3 class="product__caption">Стул "Крем брюле"</h3>
                   <p class="product__real-cost">$120<span>$150</span></p>
                   <img class="product__image" src="img/old_chear2.jpg" alt="Второй стул">
                   <button class="product__buy-bttn">Купить</button>
-                </li>
-                <li class="old-products__element product">
+                </div>
+                <div class="swiper-slide old-products__element product">
                   <h3 class="product__caption">Стул "Крем брюле"</h3>
                   <p class="product__cost">$120<span>$150</span></p>
                   <img class="product__image" src="img/old_chear3.jpg" alt="третий стул">
                   <button class="product__buy-bttn">Купить</button>
-                </li>
-                <li class="old-products__element product">
+                </div>
+                <div class="swiper-slide old-products__element product">
                   <h3 class="product__caption">Стул "Крем брюле"</h3>
                   <p class="product__cost">$120<span>$150</span></p>
                   <img class="product__image" src="img/old_chear4.jpg" alt="Четвертый стул">
                   <button class="product__buy-bttn">Купить</button>
-                </li>
-                <li class="old-products__element product">
+                </div>
+                <div class="swiper-slide old-products__element product">
                   <h3 class="product__caption">Стул "Крем брюле"</h3>
                   <p class="product__cost">$120<span>$150</span></p>
                   <img class="product__image" src="img/old_chear5.jpg" alt="Пятый стул">
                   <button class="product__buy-bttn">Купить</button>
-                </li>
-              </ul>
+                </div>
+              </div>
             </div>
-            <div id="content-2">
-              <ul class="old-products__list">
-                <li class="old-products__element product">
-                  <h3 class="product__caption">Стул "Карамель"</h3>
+            <!-- Диваны -->
+            <div id="content-2"  class="swiper content-1">
+              <div class="swiper-wrapper old-products__list">
+                <div class="swiper-slide old-products__element product">
+                  <h3 class="product__caption">Диван "Карамель"</h3>
                   <p class="product__cost">$220<span>$330</span></p>
-                  <img class="product__image">
+                  <img class="product__image" src="img/divan-1.jpg" alt="First divan">
                   <button class="product__buy-bttn">Купить</button>
-                </li>
-                <li class="old-products__element product">
+                </div>
+                <div class="swiper-slide old-products__element product">
+                  <h3 class="product__caption">Диван "Крем брюле"</h3>
+                  <p class="product__cost">$220<span>$330</span></p>
+                  <img class="product__image" src="img/divan-2.jpg" alt="Second divan">
+                  <button class="product__buy-bttn">Купить</button>
+                </div>
+                <div class="swiper-slide old-products__element product">
+                  <h3 class="product__caption">Диван "Крем брюле"</h3>
+                  <p class="product__cost">$220<span>$330</span></p>
+                  <img class="product__image" src="img/divan-3.jpg" alt="Serd divan">
+                  <button class="product__buy-bttn">Купить</button>
+                </div>
+                <div class="swiper-slide old-products__element product">
                   <h3 class="product__caption">Стул "Крем брюле"</h3>
                   <p class="product__cost">$220<span>$330</span></p>
-                  <img class="product__image">
+                  <img class="product__image" src="img/divan-4.jpg" alt="Forth divan">
                   <button class="product__buy-bttn">Купить</button>
-                </li>
-                <li class="old-products__element product">
-                  <h3 class="product__caption">Стул "Крем брюле"</h3>
+                </div>
+                <div class="swiper-slide old-products__element product">
+                  <h3 class="product__caption">Диван "Крем брюле"</h3>
                   <p class="product__cost">$220<span>$330</span></p>
-                  <img class="product__image">
+                  <img class="product__image" src="img/divan-5.jpg" alt="Fifth divan">
                   <button class="product__buy-bttn">Купить</button>
-                </li>
-                <li class="old-products__element product">
-                  <h3 class="product__caption">Стул "Крем брюле"</h3>
-                  <p class="product__cost">$220<span>$330</span></p>
-                  <img class="product__image">
-                  <button class="product__buy-bttn">Купить</button>
-                </li>
-                <li class="old-products__element product">
-                  <h3 class="product__caption">Стул "Крем брюле"</h3>
-                  <p class="product__cost">$220<span>$330</span></p>
-                  <img class="product__image">
-                  <button class="product__buy-bttn">Купить</button>
-                </li>
-              </ul>
+                </div>
+              </div>
             </div>
-            <div id="content-3">
-              <ul class="old-products__list">
-                <li class="old-products__element product">
+            <div id="content-3"  class="swiper content-1">
+              <div class="swiper-wrapper old-products__list">
+                <div class="swiper-slide old-products__element product">
                   <h3 class="product__caption">Стул "Карамель"</h3>
                   <p class="product__cost">$320<span>$430</span></p>
                   <img class="product__image">
                   <button class="product__buy-bttn">Купить</button>
-                </li>
-                <li class="old-products__element product">
+                </div>
+                <div class="swiper-slide old-products__element product">
                   <h3 class="product__caption">Стул "Крем брюле"</h3>
                   <p class="product__cost">$320<span>$430</span></p>
                   <img class="product__image">
                   <button class="product__buy-bttn">Купить</button>
-                </li>
-                <li class="old-products__element product">
+                </div>
+                <div class="swiper-slide old-products__element product">
                   <h3 class="product__caption">Стул "Крем брюле"</h3>
                   <p class="product__cost">$320<span>$430</span></p>
                   <img class="product__image">
                   <button class="product__buy-bttn">Купить</button>
-                </li>
-                <li class="old-products__element product">
+                </div>
+                <div class="swiper-slide old-products__element product">
                   <h3 class="product__caption">Стул "Крем брюле"</h3>
                   <p class="product__cost">$320<span>$430</span></p>
                   <img class="product__image">
                   <button class="product__buy-bttn">Купить</button>
-                </li>
-                <li class="old-products__element product product">
+                </div>
+                <div class="swiper-slide old-products__element product product">
                   <h3 class="product__caption">Стул "Крем брюле"</h3>
                   <p class="product__cost">$320<span>$430</span></p>
                   <img class="product__image">
                   <button class="product__buy-bttn">Купить</button>
-                </li>
-              </ul>
+                </div>
+              </div>
             </div>
           </div>
         </div>
@@ -290,7 +292,7 @@
     <footer>
       <div class="page-wrapper">
         <div class="footer__elements">
-          <img src="img/logo.svg" alt="Логотип" class="logo">
+          <img src="img/logo.svg" alt="Логотип" class="logo footer-logo">
           <ul class="footer__menu">
             <li><a href="blank.html">Доставка</a></li>
             <li><a href="blank.html">Оплата</a></li>

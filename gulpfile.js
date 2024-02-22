@@ -99,7 +99,7 @@ exports.build = build;
 const server = (done) => {
   sync.init({
     server: {
-      baseDir: './source'
+      baseDir: './build'
     },
     cors: true,
     notify: false,
@@ -107,8 +107,8 @@ const server = (done) => {
   });
   gulp.watch("source/*.html").on("change", sync.reload);
   gulp.watch("source/less/**/*.less", styles);
-  // gulp.watch("source/js/script.js", scripts);
-  // gulp.watch("source/*.html", html);
+  gulp.watch("source/js/script.js", scripts);
+  gulp.watch("source/*.html", html);
   done();
 }
 
@@ -122,5 +122,5 @@ const watcher = () => {
 }
 
 exports.default = gulp.series(
-  styles, vendorCSS, vendorJS, server, watcher
+  styles, vendorCSS, vendorJS, scripts, copyImages, html, server, watcher
 );
